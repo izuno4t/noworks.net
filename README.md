@@ -55,6 +55,15 @@ ensure code quality before deployment.
     - `npm run lint:md` for markdown issues.
     - `npm run lint:spell` for spelling issues.
 
+## Development Conventions
+
+When editing any Markdown files (like `README.md` or `GEMINI.md`), always ensure
+that there are no `markdownlint` errors. You can check for these errors by running:
+
+```bash
+npm run lint:md
+```
+
 ## Deployment
 
 To deploy the website to Firebase Hosting, run the following command:
