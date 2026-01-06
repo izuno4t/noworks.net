@@ -37,14 +37,14 @@ This project is a static site and does not have a traditional build step like co
 source code. However, you should install project dependencies and run linters to
 ensure code quality before deployment.
 
-1.  **Install Dependencies:**
+1. **Install Dependencies:**
     Install the necessary development dependencies (linters) using npm:
 
     ```bash
     npm install
     ```
 
-2.  **Run Linters:**
+2. **Run Linters:**
     Check for markdown and spelling errors:
 
     ```bash
