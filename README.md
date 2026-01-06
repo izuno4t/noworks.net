@@ -1,14 +1,17 @@
 # noworks.net Website
 
-This repository contains the source code for the [noworks.net](https://noworks.net) website.
+This repository contains the source code for the [noworks.net](https://noworks.net)
+website.
 
 ## Overview
 
-This is a simple static website built with HTML and CSS, and hosted on Firebase Hosting. This project utilizes Google Gemini for development and maintenance.
+This is a simple static website built with HTML and CSS, and hosted on Firebase
+Hosting. This project utilizes Google Gemini for development and maintenance.
 
 ## Prerequisites
 
-Before you begin, ensure you have the [Firebase CLI](https://firebase.google.com/docs/cli) installed.
+Before you begin, ensure you have the [Firebase CLI](https://firebase.google.com/docs/cli)
+installed.
 
 ```bash
 npm install -g firebase-tools
@@ -22,13 +25,15 @@ firebase login
 
 ## Development
 
-To run the website locally, use the `firebase serve` command. This will start a local server and serve the files from the `public` directory.
+To run the website locally, use the `firebase serve` command. This will start a local
+server and serve the files from the `public` directory.
 
 ```bash
 firebase serve
 ```
 
-You can then view the site at the URL provided in the command output (usually `http://localhost:5000`).
+You can then view the site at the URL provided in the command output (usually
+`http://localhost:5000`).
 
 ## Deployment
 
@@ -44,19 +49,36 @@ This will upload the contents of the `public` directory to Firebase.
 
 - [ ] Configure GitHub Actions for automatic deployment.
 
-## Gemini
+## Use Gemini
 
-This project is developed and maintained with the assistance of Google's Gemini. You can use Gemini for a variety of tasks, including:
+This project is developed and maintained with the assistance of Google's Gemini.
+You can use Gemini to help you with a variety of development tasks.
 
-*   Answering questions about the codebase.
-*   Implementing changes and new features.
-*   Generating or updating documentation.
+To interact with Gemini, state your request in natural language. Here are some
+examples of how you can phrase your requests:
 
-To interact with Gemini, simply state your request in natural language within your development environment.
+- "What is the purpose of the `firebase.json` file?"
+- "Explain the CSS in `public/styles.css`."
+
+**For making changes:**
+
+- "Change the h1 heading to 'Welcome to noworks.net'."
+- "Add a new section to the `index.html` file with a list of my projects."
+
+**For adding new features:**
+
+- "Add a contact form to the website."
+- "Create a new page called 'about.html' and link to it from the main page."
+
+**For documentation:**
+
+- "Update the 'Development' section of this `README.md` to include instructions
+  for a new team member."
+- "Generate a `CONTRIBUTING.md` file with standard contribution guidelines."
 
 ## Theme
 
 This site uses the [Dracula Theme](https://draculatheme.com/).
 
--   **Website:** [draculatheme.com](https://draculatheme.com/)
--   **GitHub:** [github.com/dracula/dracula-theme](https://github.com/dracula/dracula-theme)
+- **Website:** [draculatheme.com](https://draculatheme.com/)
+- **GitHub:** [github.com/dracula/dracula-theme](https://github.com/dracula/dracula-theme)
