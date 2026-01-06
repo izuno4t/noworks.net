@@ -22,27 +22,13 @@ firebase login
 
 ## Development
 
-To run the website locally, you have a couple of options:
+To run the website locally, use the `firebase serve` command. This will start a local server and serve the files from the `public` directory.
 
-1.  **Using `firebase serve` (Recommended for static sites):**
-    This command serves your static files from the `public` directory. It's lighter and faster for just testing your website's content.
+```bash
+firebase serve
+```
 
-    ```bash
-    firebase serve
-    ```
-
-    You can usually view the site at `http://localhost:5000` or `http://localhost:5001`. The command output will show the exact URL.
-
-2.  **Using `firebase emulators:start` (for a full Firebase emulation environment):**
-    This command starts the Firebase Local Emulator Suite, providing a comprehensive environment if your site were to integrate with other Firebase services (like Functions, Firestore, etc.).
-
-    ```bash
-    firebase emulators:start
-    ```
-
-    This will start a local server, and you can view the site at `http://localhost:5000` (or another port specified in the output).
-
-Alternatively, for basic viewing, you can open the `public/index.html` file directly in your web browser.
+You can then view the site at the URL provided in the command output (usually `http://localhost:5000`).
 
 ## Deployment
 
