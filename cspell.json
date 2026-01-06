@@ -1,0 +1,23 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "words": [
+        "noworks"
+    ],
+    "dictionaries": [
+        "companies",
+        "softwareTerms",
+        "html",
+        "css"
+    ],
+    "ignorePaths": [
+        "node_modules",
+        "package.json",
+        "package-lock.json",
+        ".git",
+        ".vscode",
+        ".DS_Store",
+        "*.log",
+        "firebase.json"
+    ]
+}
