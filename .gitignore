@@ -70,3 +70,4 @@ node_modules/
 
 # CSpell configuration
 cspell.json
+.DS_Store
