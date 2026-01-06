@@ -43,3 +43,13 @@ This will upload the contents of the `public` directory to Firebase.
 ## To Do
 
 - [ ] Configure GitHub Actions for automatic deployment.
+
+## Gemini
+
+This project is developed and maintained with the assistance of Google's Gemini. You can use Gemini for a variety of tasks, including:
+
+*   Answering questions about the codebase.
+*   Implementing changes and new features.
+*   Generating or updating documentation.
+
+To interact with Gemini, simply state your request in natural language within your development environment.
