@@ -1,0 +1,14 @@
+{
+  "name": "noworks.net",
+  "version": "1.0.0",
+  "description": "noworks.net website",
+  "scripts": {
+    "lint": "npm run lint:md && npm run lint:spell",
+    "lint:md": "markdownlint --ignore node_modules .",
+    "lint:spell": "cspell \"**/*\""
+  },
+  "devDependencies": {
+    "cspell": "^8.3.2",
+    "markdownlint-cli": "^0.39.0"
+  }
+}
