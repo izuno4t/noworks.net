@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:700);
+body{
+	color: #f8f8f2;
+	background-color: #282a36;
+}
+
+h1{
+	margin: 20px;
+	padding: 20px;
+	font-family: 'Quicksand', cursive, Georgia;
+	font-size: 42pt;
+	text-align: right;
+	color: #bd93f9;
+}
+
+h2{
+	margin-left: 20px;
+	font-family: 'Quicksand', cursive, Georgia;
+	font-size: 24pt;	
+}
+
+ul{
+	text-align: right;
+	margin-bottom: 60px;
+	margin-right: 60px;
+}
+
+ul li{
+	list-style: none;
+	line-height: 3em;
+}
+
+a:link, a:visited, a:active {
+	font-family: Georgia;
+	font-size: 18pt;	
+	color: #8be9fd;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ff79c6;
+	background-color: #44475a;
+	font-family: Georgia;
+	font-size: 18pt;
+	padding: 5px;
+}
+
