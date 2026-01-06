@@ -4,7 +4,7 @@ This repository contains the source code for the [noworks.net](https://noworks.n
 
 ## Overview
 
-This is a simple static website built with HTML and CSS, and hosted on Firebase Hosting. It uses the Dracula Theme for its color scheme. This project utilizes Google Gemini for development and maintenance.
+This is a simple static website built with HTML and CSS, and hosted on Firebase Hosting. This project utilizes Google Gemini for development and maintenance.
 
 ## Prerequisites
 
@@ -53,3 +53,10 @@ This project is developed and maintained with the assistance of Google's Gemini.
 *   Generating or updating documentation.
 
 To interact with Gemini, simply state your request in natural language within your development environment.
+
+## Theme
+
+This site uses the [Dracula Theme](https://draculatheme.com/).
+
+-   **Website:** [draculatheme.com](https://draculatheme.com/)
+-   **GitHub:** [github.com/dracula/dracula-theme](https://github.com/dracula/dracula-theme)
