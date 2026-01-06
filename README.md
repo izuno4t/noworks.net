@@ -11,11 +11,7 @@ Hosting. This project utilizes Google Gemini for development and maintenance.
 ## Prerequisites
 
 Before you begin, ensure you have the [Firebase CLI](https://firebase.google.com/docs/cli)
-installed.
-
-```bash
-npm install -g firebase-tools
-```
+installed globally.
 
 You will also need to be authenticated with Firebase:
 
@@ -34,6 +30,30 @@ firebase serve
 
 You can then view the site at the URL provided in the command output (usually
 `http://localhost:5000`).
+
+## Build Procedures
+
+This project is a static site and does not have a traditional build step like compiling
+source code. However, you should install project dependencies and run linters to
+ensure code quality before deployment.
+
+1.  **Install Dependencies:**
+    Install the necessary development dependencies (linters) using npm:
+
+    ```bash
+    npm install
+    ```
+
+2.  **Run Linters:**
+    Check for markdown and spelling errors:
+
+    ```bash
+    npm run lint
+    ```
+
+    You can also run linters individually:
+    - `npm run lint:md` for markdown issues.
+    - `npm run lint:spell` for spelling issues.
 
 ## Deployment
 
