@@ -36,5 +36,6 @@ jobs:
           chmod 600 /tmp/firebase-sa.json
           export GOOGLE_APPLICATION_CREDENTIALS=/tmp/firebase-sa.json
           echo "Deploying to Firebase Hosting (project: $FIREBASE_PROJECT_ID)"
-          npx firebase-tools@latest deploy --only hosting --project "$FIREBASE_PROJECT_ID" --noninteractive
+          npx firebase-tools@latest --version
+          npx firebase-tools@latest deploy --only hosting --project "$FIREBASE_PROJECT_ID" --non-interactive
         shell: bash
