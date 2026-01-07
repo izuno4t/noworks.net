@@ -25,9 +25,15 @@ jobs:
           if npm run | grep -q "build"; then npm run build; else echo "no build script"; fi
         shell: bash
 
-      - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
-          projectId: "${{ secrets.FIREBASE_PROJECT_ID }}"
+      - name: Deploy to Firebase Hosting (production)
+        env:
+          FIREBASE_PROJECT_ID: "${{ secrets.FIREBASE_PROJECT_ID }}"
+        run: |
+          set -euo pipefail
+          echo "Writing service account to /tmp/firebase-sa.json"
+          echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}" > /tmp/firebase-sa.json
+          chmod 600 /tmp/firebase-sa.json
+          export GOOGLE_APPLICATION_CREDENTIALS=/tmp/firebase-sa.json
+          echo "Deploying to Firebase Hosting (project: $FIREBASE_PROJECT_ID)"
+          npx firebase-tools@latest deploy --only hosting --project "$FIREBASE_PROJECT_ID" --noninteractive
+        shell: bash
