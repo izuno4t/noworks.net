@@ -74,10 +74,6 @@ firebase deploy
 
 This will upload the contents of the `public` directory to Firebase.
 
-## To Do
-
-- [ ] Configure GitHub Actions for automatic deployment.
-
 ## Use Gemini
 
 This project is developed and maintained with the assistance of Google's Gemini.
