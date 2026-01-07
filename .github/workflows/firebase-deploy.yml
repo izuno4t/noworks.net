@@ -1,0 +1,32 @@
+name: Deploy to Firebase Hosting on Merge
+on:
+  push:
+    branches:
+      - main  # mainブランチにpush/mergeされた時に実行
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. コードのチェックアウト
+      - uses: actions/checkout@v4
+
+      # 2. Node.jsのセットアップ (ビルドが必要な場合)
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      # 3. 依存関係のインストール & ビルド
+      # 静的ファイル（HTMLのみ）だけの場合はここをコメントアウトしてもOK
+      - run: npm ci
+      - run: npm run build
+
+      # 4. Firebase Hostingへのデプロイ
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}'
+          channelId: live
+          projectId: YOUR_PROJECT_ID # ここをご自身のプロジェクトIDに書き換えてください
