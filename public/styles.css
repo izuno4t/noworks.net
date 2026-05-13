@@ -1,7 +1,8 @@
+/* cspell:words drac */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 body{
-	color: #f8f8f2;
-	background-color: #282a36;
+	color: var(--drac-fg);
+	background-color: var(--drac-bg);
 }
 
 h1{
@@ -10,7 +11,7 @@ h1{
 	font-family: 'Quicksand', cursive, Georgia;
 	font-size: 42pt;
 	text-align: right;
-	color: #bd93f9;
+	color: var(--drac-purple);
 }
 
 h2{
@@ -33,15 +34,14 @@ ul li{
 a:link, a:visited, a:active {
 	font-family: Georgia;
 	font-size: 18pt;	
-	color: #8be9fd;
+	color: var(--drac-cyan);
 	text-decoration: none;
 }
 
 a:hover {
-	color: #ff79c6;
-	background-color: #44475a;
+	color: var(--drac-pink);
+	background-color: var(--drac-selection);
 	font-family: Georgia;
 	font-size: 18pt;
 	padding: 5px;
 }
-
